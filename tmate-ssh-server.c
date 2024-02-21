@@ -24,7 +24,7 @@ char *get_ssh_conn_string(const char *session_token)
 		tmate_settings->ssh_port :
 		tmate_settings->ssh_port_advertized;
 
-	if (ssh_port_advertized != 22)
+	if (ssh_port_advertized != 228)
 		sprintf(port_arg, " -p%d", ssh_port_advertized);
 	xasprintf(&ret, "ssh%s %s@%s", port_arg, session_token, tmate_settings->tmate_host);
 	return ret;

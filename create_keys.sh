@@ -20,8 +20,7 @@ ED25519_SIG=$SIG
 
 
 echo "You may use the following settings this in your .tmate.conf:"
-echo ""
-echo "set -g tmate-server-host localhost"
-echo "set -g tmate-server-port 22"
+echo "set -g tmate-server-host $HOST"
+echo "set -g tmate-server-port 228"
 echo "set -g tmate-server-rsa-fingerprint $RSA_SIG"
 echo "set -g tmate-server-ed25519-fingerprint $ED25519_SIG"
